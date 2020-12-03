@@ -1,0 +1,56 @@
+{% extends "Site/index.html" %}
+
+{% block content %}
+{% load static %}
+
+    <div id="home">
+        <div class="header-blue">
+            <nav class="navbar navbar-dark navbar-expand-md sticker" style="padding-top:30px;">
+                <div class="container"><a class="navbar-brand"  style="font-size:24px;">About Page</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#home" target="_top"></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home_page' %}">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'team_page' %}">Team</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'project_page' %}">Projects</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'contact_page' %}">Contact</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'about_page' %}">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div></div>
+            <br>
+            <br>
+            <section class="page-section about-heading">
+            <div class="container">
+              <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'Site/about/assets/img/lauren-mancke-aOC7TSLb1o8-unsplash.jpg' %}" alt="" width="800" height="600">
+              <div class="about-heading-content">
+                <div class="row">
+                  <div class="col-xl-9 col-lg-10 mx-auto">
+                    <div class="bg-faded rounded p-5">
+                      <h2 class="section-heading mb-4">
+                        <span class="section-heading-lower">About My page</span>
+                      </h2>
+                      <p>Created by me. i can say that this is the first website i made since i started to learn Python. I used <b>Django</b> and <b>Bootstrap</b> to carry this out.</p>
+                      <p class="mb-0">Django is a web framework that was made with Python. For more information: <a
+                              href="#">click here.</a>
+                      </p>
+                        <p class="mb-0">About Bootstrap, it's a fantastic tool if you don't have much knowledge with web frontend like me. I would even say that maybe this is the best of his category. Check this out to learn more: <a
+                              href="#">click here.</a>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+            </div>
+            </div>
+    <div></div>
+    {% endblock %}
+

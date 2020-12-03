@@ -1,0 +1,155 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>My page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/Footer-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/Header-Blue--Sticky-Header--Smooth-Scroll.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/home/assets/css/bootstrap-reboot.min.css' %}">
+
+    <!-- Team page CDN -->
+    <link rel="stylesheet" href="{% static 'Site/Team/assets/css/Article-Dual-Column.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/Team/assets/css/Header-Blue--Sticky-Header--Smooth-Scroll.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/Team/assets/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/Team/assets/css/Team-Clean.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+
+    <!-- project page CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/gradient-navbar-1.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/gradient-navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/Highlight-Blue.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/image-card-materialize-1.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/image-card-materialize.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/News-Cards.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/Projects-Horizontal.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'Site/project/assets/css/Team-with-rotating-cards.css' %}">
+
+    <!-- contact page CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'Site/contact/assets/css/styles.css' %}">
+
+    <!-- about page CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="{% static 'Site/about/assets/css/business-casual.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    {% block content %}
+    <div id="home">
+        <div class="header-blue">
+            <nav class="navbar navbar-dark navbar-expand-md sticker" style="padding-top:30px;">
+                <div class="container"><a class="navbar-brand" href="#" style="font-size:24px;">@TommySylver</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#home" target="_top"></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home_page' %}">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'team_page' %}">Team</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'project_page' %}">Projects</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'contact_page' %}">Contact</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'about_page' %}">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        <div class="container hero">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-6 offset-xl-1" style="margin-left:44px;">
+                    <h1 style="margin-top:204px;">Stay on the course</h1>
+                    <p>My name is Tommy Sylver. A 19 years old boy from Madagascar. Passionate with technologie, i started and chose to become a programmer. I knew that this is not going to be easy, but i didn't let that fact to stop from moving forward.</p><button class="btn btn-light btn-lg action-button" type="button" style="padding-right:20px;padding-left:20px;padding-bottom:6px;padding-top:6px;font-size:16px;"
+                        hover="background: #fff; color: #333;">Learn More</button></div>
+                <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                    <div class="iphone-mockup"><img src="{% static 'Site/home/assets/img/face_co.png' %}" class="device m-5 align-middle rounded-circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {% endblock %}
+
+    <div></div>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Study</h3>
+                        <ul>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Django</a></li>
+                            <li><a href="#">English learner</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Location</h3>
+                        <p>
+                            Tamatave, Madagascar
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Email</h3>
+                        <p>
+                            johantony63@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://www.facebook.com/tonystark.walker.7"><i class="icon ion-social-facebook"></i></a><a href="https://twitter.com/SlverTommy"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/in/tommy-sylver-3796021a9/?msgControlName=reply_to_sender&msgConversationId=6679731728879292416&msgOverlay=true"><i class="icon ion-social-linkedin"></i></a><a href="https://www.instagram.com/johantony63/?hl=fr"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Copyright Website © 2020</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'Site/home/assets/js/Header-Blue--Sticky-Header--Smooth-Scroll-1.js' %}"></script>
+    <script src="{% static 'Site/home/assets/js/Header-Blue--Sticky-Header--Smooth-Scroll.js' %}"></script>
+    <script src="{% static 'Site/home/assets/js/bootstrap.js' %}"></script>
+    <script src="{% static 'Site/home/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'Site/home/assets/js/bootstrap-bundle.js' %}"></script>
+    <script src="{% static 'Site/home/assets/js/bootstrap-bundle.min.js' %}"></script>
+
+    <!-- Team page script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'Site/Team/assets/js/Header-Blue--Sticky-Header--Smooth-Scroll-1.js' %}"></script>
+    <script src="{% static 'Site/Team/assets/js/Header-Blue--Sticky-Header--Smooth-Scroll.js' %}"></script>
+
+    <!-- Project page script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'Site/project/assets/js/image-card-materialize.js' %}"></script>
+
+    <!-- contact page script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- about page script -->
+    <script src="{% static 'Site/about/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'Site/about/assets/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>

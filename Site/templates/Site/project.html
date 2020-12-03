@@ -1,0 +1,88 @@
+{% extends "Site/index.html" %}
+
+{% block content %}
+{% load static %}
+
+    <div id="home">
+        <div class="header-blue">
+            <nav class="navbar navbar-dark navbar-expand-md sticker" style="padding-top:30px;">
+                <div class="container"><a class="navbar-brand"  style="font-size:24px;">Projects Page</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#home" target="_top"></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#home" target="_top"></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home_page' %}">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'team_page' %}">Team</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'project_page' %}">Projects</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'contact_page' %}">Contact</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'about_page' %}">About</a></li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            </div>
+            </div>
+    <div></div>
+
+    <div class="projects-horizontal">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Projects </h2>
+                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+            </div>
+            <div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="{% url 'todo' %}"><img class="img-fluid" src="{% static 'Site/project/assets/img/desk.jpg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name">ToDo App</h3>
+                            <p class="description">This was my first project in django. maybe that is the reason why it's not as goog as it should be</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="{% static 'Site/project/assets/img/building.jpg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name"></h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="{% static 'Site/project/assets/img/loft.jpg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><a href="#"><img class="img-fluid" src="{% static 'Site/project/assets/img/minibus.jpeg' %}"></a></div>
+                        <div class="col">
+                            <h3 class="name">Project Name</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <div class="highlight-blue">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Information</h2>
+                <p class="text-center">If you want the source code. you can contact me or use the link bellow that will redirect &nbsp;you to my github account. Feel free to ask question about it!&nbsp;</p>
+            </div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Free Download</a></div>
+        </div>
+    </div>
+    <div></div>
+
+    {% endblock %}

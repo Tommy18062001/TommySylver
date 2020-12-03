@@ -1,0 +1,84 @@
+{% extends "Site/index.html" %}
+
+{% block content %}
+{% load static %}
+
+    <div id="home">
+        <div class="header-blue">
+            <nav class="navbar navbar-dark navbar-expand-md sticker" style="padding-top:30px;">
+                <div class="container"><a class="navbar-brand"  style="font-size:24px;">Team Page</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div
+                        class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#home" target="_top"></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'home_page' %}">Home</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'team_page' %}">Team</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'project_page' %}">Projects</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'contact_page' %}">Contact</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'about_page' %}">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            </div>
+            </div>
+    <div></div>
+    <div class="team-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Team </h2>
+                <p class="text-center">This is our team. Even though we don't still have a team name, we created it. Here we are!!!</p>
+            </div>
+            <div class="row people ">
+                <div class="col-md-6 col-lg-4 offset-lg-4 item"><img class="rounded-circle" src="{% static 'Site/Team/assets/img/here.jpg' %}">
+                    <h3 class="name">Tommy Sylver</h3>
+                    <p class="title">Python Developer</p>
+                    <p class="description">My name is Tommy Sylver. A 19 years old boy from Madagascar. Passionate with technologie, i started and chose to become a programmer. I knew that this is not going to be easy, but i didn't let that fact to stop from moving forward.</p>
+                    <div
+                        class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div></div>
+    <div class="article-dual-column">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="intro">
+                        <h1 class="text-center">About me!</h1>
+                        <p class="text-center"><span class="by">by</span> <a href="#">&nbsp;@tommySylver</a><span class="date">Nov, 27th 2020</span></p><img class="img-fluid" src="{% static 'Site/Team/assets/img/desk.jpg' %}"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-lg-3 offset-md-1">
+                    <div class="toc">
+                        <p>Table of Contents</p>
+                        <ul>
+                            <li><a href="#">Hard Work </a> </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 col-lg-7 offset-md-1 offset-lg-0">
+                    <div class="text">
+                        <p>My name is <span style="text-decoration: underline;">Razananaivo Sylver Tommy.</span> I am a Malagasy boy. The reason why i made
+                        this site in english is a part of my english practice. Let's get right to the point: the little things i wrote below
+                        was a excerpt from my assignment about hard work. I love the way i expressed it.</p>
+                        <p>Hope you enjoy it!!</p>
+                        <h2>Hard work</h2>
+                        <p>Have you ever tried to do something for the first time? Did it seem so hard? Did you feel confident in accomplishing it or afraid to fail? The way we think about something we are trying to do is what determines how hard it will be. Everybody always has problems but not all accept to be beaten down by them. Those who choose to grow from hardship are using a growth mindset. One step we can take to develop a growth mindset would be to overcome all adversities which show up on my way by learning from them. </p>
+                        <figure class="figure"><img class="figure-img" src="{% static 'Site/Team/assets/img/computer.jpg' %}">
+                            <figcaption class="figure-caption">Caption</figcaption>
+                        </figure>
+                        <p>There are many challenges along the path that you can’t imagine but all of them can be a step toward your success if you know how to face them and develop a growth mindset rather than having a fixed mindset. I believe that we can accomplish everything no matter the circumstances if we embrace adversities and act with faith in Christ. By continuing to work on the thing I have some trouble with, I will be able to grow most, and also, I will inspire my family and the people around me by the example I set. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+
+    {% endblock %}
